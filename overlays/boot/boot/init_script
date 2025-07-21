@@ -135,6 +135,7 @@ pw groupmod wheel -m liveuser
 pw groupmod video -m liveuser
 pw groupmod webcamd -m liveuser
 pw groupmod cups -m liveuser
+pw groupmod vboxusers -m liveuser
 
 ######################################################################
 # From here on optional, helloSystem specific optimizations
