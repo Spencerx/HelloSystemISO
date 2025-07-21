@@ -155,7 +155,8 @@ if [ -n "${INSTALLER_DEVICE}" ] ; then
   chroot "${FSMNT}" pw groupmod video -m "${username}" && \
   chroot "${FSMNT}" pw groupmod operator -m "${username}" && \
   chroot "${FSMNT}" pw groupmod webcamd -m "${username}" && \
-  chroot "${FSMNT}" pw groupmod cups -m "${username}"
+  chroot "${FSMNT}" pw groupmod cups -m "${username}" && \
+  chroot "${FSMNT}" pw groupmod vboxusers -m "${username}"
 else
   echo "Environment variable INSTALLER_DEVICE not set, asking the user for input"
   while true; do
